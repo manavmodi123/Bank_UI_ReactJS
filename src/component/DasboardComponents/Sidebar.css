@@ -1,0 +1,40 @@
+.logo{
+    margin: 30px;
+}
+.logo img{
+    width: 180px;
+}
+.sidebar-items{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items{
+    margin: 5px;
+}
+.items li{
+    margin-top: 40px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: gray;
+    font-weight: 500;
+}
+.items li i{
+    margin-right: 20px;
+    /* font-size: 25px; */
+    color: gray;
+}
+
+
+.items li:first-child {
+    color: #302a99;
+  }
+  
+  .items li:not(:first-child):hover {
+    cursor: pointer;
+    color: #302a99;
+  }
+  
+  

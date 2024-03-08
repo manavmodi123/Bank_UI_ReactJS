@@ -1,0 +1,94 @@
+.credit-cards{
+    display: flex;
+}
+
+.card-title{
+    margin: 20px;
+    font-size: 25px;
+    /* letter-spacing: 1px; */
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    margin-left: 35px;
+    height: 250px;
+    width: 45%;
+    border-radius: 30px;
+    /* background-color: rgba(142, 137, 227, 0.902); */
+    background-color: rgba(44, 39, 154, 0.902);
+   
+}
+.balance{
+    margin: 20px;
+    top: 20;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:85%;
+}
+.balance-info{
+    margin-top: 20px;
+    text-align: left;
+}
+.balance-info p{
+    font-size: 14px;
+}
+.balance-info h3{
+    font-size: 20px;
+}
+.balance img{
+    margin-top: 20px;
+    height: 45px;
+    width: 45px;
+}
+.card-details{
+    margin: 20px;
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    justify-content:flex-start;
+    width:85%;
+}
+.card-validity {
+    margin-left: 80px;
+}
+.card-validity p,
+.card-name p{
+    font-size: 12px;
+    font-weight: 400;
+}
+.card-number{
+    background-color: rgba(131, 140, 225, 0.849);
+    border-end-start-radius: 30px;
+    border-end-end-radius:  30px;
+}
+
+.balance-number{
+    margin: 20px;
+    color: white;
+
+    padding-top: 20px;
+    display: flex;
+    justify-content:space-between;
+    width:85%;
+    
+}
+.balance-number p{
+    font-size: 23px;
+}
+.balance-number img{
+    padding-bottom: 10px;
+    height: 45px;
+    width: 45px;
+}
+
+.transaction-title{
+    margin: 20px;
+    font-size: 25px;
+    /* letter-spacing: 1px; */
+    font-weight: 600;
+}

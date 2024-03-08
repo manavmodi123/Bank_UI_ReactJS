@@ -1,0 +1,8 @@
+.expense-card{
+    margin: 20px;
+    height: 400px;
+    padding-top: 10px;
+    width: 90%;
+    border-radius: 25px;
+    background-color: white;
+}

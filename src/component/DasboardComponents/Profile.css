@@ -1,0 +1,98 @@
+.dashboard{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar{
+    height: 100vh;
+    width: 15%;
+    /* background-color: antiquewhite; */
+    position: fixed;
+}
+
+.header{
+    height: 100px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    flex-grow: 1; 
+    margin-left: 15%; 
+}
+.profile-container{
+    flex-grow: 1;
+    margin-left: 15%;
+    height: calc(100vh - 100px);
+    background-color: #efefef;
+    width: calc(100% - 15%);
+}
+.profile-card{
+    background-color: white;
+    width: 95%;
+    margin: 20px;
+    height: 600px;
+    border-radius: 30px;
+    
+}
+.user{
+    display: flex;
+}
+.profile-title{
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    font-size: 30px;
+}
+.user-image{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+.user-image img{
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.user-details{
+    height: 400px;
+    margin-left: 20px;
+    width: 70%;
+    
+}
+.feild-row{
+    display: flex;
+    /* margin: 20px; */
+}
+.input-feild{
+    margin-top: 12px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.input-feild input{
+    border: 1px solid rgb(232, 231, 231);
+    width: 350px;
+    height: 45px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: gray;
+    padding: 10px;
+}
+.input-feild input:focus{
+    /* border: none; */
+    outline: none;
+}
+.input-feild label{
+    color: gray;
+}
+.save{
+    height: 50px;
+    width: 200px;
+    background-color: rgba(44, 39, 154, 0.902);
+    color: white;
+    align-items: center;
+    margin: 20px;
+    border-radius: 20px;
+}

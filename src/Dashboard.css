@@ -1,0 +1,87 @@
+.dashboard{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar{
+    height: 100vh;
+    width: 15%;
+    /* background-color: antiquewhite; */
+    position: fixed;
+}
+
+.header{
+    height: 100px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    flex-grow: 1; 
+    margin-left: 15%; 
+}
+
+.main-container{
+    flex-grow: 1;
+    margin-left: 15%;
+    height: calc(200vh - 100px);
+    background-color: #efefef;
+    width: calc(100% - 15%);
+}
+.card-container{
+    margin: 10px;
+    display: flex;
+}
+.credit-container{
+    width: 66%;
+}
+.transaction-container{
+    width: 33%;
+}
+.transaction-title{
+    display: flex;
+    justify-content: space-between;
+}
+.activity-container{
+    margin: 10px;
+    display: flex;
+
+}
+.week-activity-container{
+    width: 66%;
+    /* background-color: beige; */
+}
+.week-activity-container h1{
+    margin: 20px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.last-container{
+    margin: 20px;
+    display: flex;
+
+}
+.expense-container h1{
+    margin: 20px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+.invoice-container{
+    width: 33%;
+    /* background-color: blue; */
+}
+.balance-history{
+    width: 66%;
+    /* padding-top: -10px; */
+}
+.history-title{
+    display: flex;
+}
+.history-title h2{
+    margin: 20px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
