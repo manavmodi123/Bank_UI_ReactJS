@@ -10,13 +10,13 @@ import CaptureImageRegister from './component/CaptureImageRegister.js';
 
 function App() {
 
-  const [blur,setBlur] = useState(false);
+  const [blur,setBlur] = useState(true);
   return (
     <div className="App">
       <Routes>
         
         {/* <Route path="/" element={<Dashboard />} /> */}
-        <Route path='/profile' element={<Profile blur = {blur} />} />
+        <Route path='/profile' element={<Profile blur = {blur} setBlur = {setBlur} />} />
         <Route path="/" element={<Register />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard blur = {blur} setBlur = {setBlur} />} />

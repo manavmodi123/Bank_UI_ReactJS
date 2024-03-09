@@ -22,6 +22,12 @@ const Header = ({ blur, setBlur }) => {
         }
     }, [camera, setBlur]);
 
+    useEffect(() => {
+        if (pin.length === 4) {
+            handleSubmit();
+        }
+    }, [pin]);
+
     const handleSubmit = () => {
         console.log('PIN submitted:', pin);
         console.log("camera", camera);
@@ -39,7 +45,7 @@ const Header = ({ blur, setBlur }) => {
             captureScreenshot();
         }, 2000);
         return () => clearInterval(interval);
-    }, []);
+    },[camera]);
 
     const captureScreenshot = () => {
         if (camera && webcamRef.current) {
@@ -140,12 +146,7 @@ const Header = ({ blur, setBlur }) => {
                     }}
                     type="numeric"
                 />
-                <button
-                    style={{ backgroundColor: 'rgba(44, 39, 154, 0.902)', color: 'white', padding: '10px 20px', borderRadius: '5px', cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: "100px", marginTop: "30px" }}
-                    onClick={handleSubmit}
-                >
-                    Submit
-                </button>
+                
             </Modal>}
 
         </div>

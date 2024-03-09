@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import ReactPinInput from 'react-pin-input';
 import { useNavigate } from 'react-router-dom';
@@ -7,6 +6,12 @@ import { useNavigate } from 'react-router-dom';
 const PinModal = ({ isOpen, onClose }) => {
   const navigate = useNavigate();
   const [pin, setPin] = useState('');
+
+  useEffect(() => {
+    if (pin.length === 4) {
+      handleSubmit();
+    }
+  }, [pin]);
 
   const handlePinChange = (value) => {
     setPin(value);
@@ -18,9 +23,6 @@ const PinModal = ({ isOpen, onClose }) => {
     onClose();
     // navigate('/Login');
     navigate('/capture-image-register');
-    
-    
-
   };
 
   return (
@@ -70,12 +72,6 @@ const PinModal = ({ isOpen, onClose }) => {
         }}
         type="numeric"
       />
-      <button
-        style={{  backgroundColor: 'rgba(44, 39, 154, 0.902)', color: 'white', padding: '10px 20px', borderRadius: '5px', cursor: 'pointer' , display: 'flex', justifyContent: 'center' , alignItems: 'center',marginLeft:"100px",marginTop:"30px"}}
-        onClick={handleSubmit}
-      >
-        Create
-      </button>
     </Modal>
   );
 };

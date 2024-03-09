@@ -1,4 +1,4 @@
-import React ,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 import "./Profile.css";
 import Sidebar from './Sidebar'
 import Header from './Header';
@@ -7,20 +7,20 @@ import user from "../images/user.jpeg";
 
 
 
-const Profile = ({blur}) => {
-  useEffect(() => {
-    const container = document.querySelector('.profile-container');
-    if (container) {
-      container.style.filter = blur ? 'blur(8px)' : 'none';
-    }
-  }, [blur]);
+const Profile = ({ blur, setBlur }) => {
+    useEffect(() => {
+        const container = document.querySelector('.profile-container');
+        if (container) {
+            container.style.filter = blur ? 'blur(8px)' : 'none';
+        }
+    }, [blur]);
     return (
         <div className='dashboard'>
             <div className='sidebar'>
                 <Sidebar />
             </div>
             <div className='header'>
-                <Header />
+                <Header blur={blur} setBlur={setBlur} />
             </div>
             <div className='profile-container'>
                 <div className='profile-card'>
@@ -34,7 +34,7 @@ const Profile = ({blur}) => {
                                 <div className='feild-row'>
                                     <div className='input-feild'>
                                         <label>Your Name:</label>
-                                        <input placeholder="Manav Modi"/>
+                                        <input placeholder="Manav Modi" />
                                     </div>
                                     <div className='input-feild'>
                                         <label>User Name:</label>
@@ -49,7 +49,7 @@ const Profile = ({blur}) => {
                                     </div>
                                     <div className='input-feild'>
                                         <label>Password</label>
-                                        <input placeholder='**********' type='password'/>
+                                        <input placeholder='**********' type='password' />
                                     </div>
                                 </div>
 
@@ -73,7 +73,7 @@ const Profile = ({blur}) => {
                                         <input placeholder='INDIA' />
                                     </div>
                                 </div>
-                                
+
                                 <button className='save'>Save</button>
 
                             </form>
